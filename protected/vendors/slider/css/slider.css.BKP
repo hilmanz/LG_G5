@@ -1,0 +1,257 @@
+#wrapper {
+	/*padding-top: 49px;*/
+	margin-top:93px;
+}
+
+.inner {
+	width: 1180px;
+	margin: 0 auto;
+	position: relative;
+}
+.inner.shaded {
+	background: #fafafa;
+}
+
+
+/* Hero banners */
+
+.hero {
+	width: 100%;
+	height: 750px;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 38px;
+	margin-bottom: -38px;
+	clear:both;
+}
+.hero .rotator {
+	height: 750px;
+	overflow: hidden;
+}
+.hero .hero-link {
+	position: relative !important;
+	background-color: #000000;
+	width:980px;
+	min-width: 980px;
+	max-width:980;
+}
+.hero .hero-inner-link {
+	position: absolute;
+	bottom: 38px;
+	left: 0;
+	width: 100%;
+	height: 96%;
+	z-index: 50;
+}
+
+.hero .hero-caption-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+.hero .hero-caption {
+	/*background: rgba(63, 54, 47, 0.5);*/
+	color: #ffffff;
+	font-size: 40px;
+	display: inline-block;
+	margin: 33% auto 0 auto;
+	font-size: 40px;
+	padding: 14px 22px;
+	max-width: 80%;
+	white-space: normal;
+	text-decoration: none;
+}
+
+.hero .hero-sub-caption {
+	display: block;
+	margin: 0 auto;
+	font-size: 30px;
+	font-style: italic;
+	color: #ffffff;
+	padding: 8px 22px;
+	max-width: 80%;
+}
+/*.hero .hero-sub-caption {
+	display: block;
+	margin: 0 auto;
+	font-size: 30px;
+	font-style: italic;
+	color: #ffffff;
+	padding: 8px 22px;
+	width: 92px;
+	background: url(../images/play-button.png) left bottom;
+}*/
+.hero .hero-vid-play-button {
+	/*display: block;
+	margin: 350px 20px 20px 5px;*/
+	background-image: url(../images/play_grey.png);
+	/*padding: 8px 22px;*/
+	width: 90px;
+	height: 90px;
+	/*background-color: #000000;*/
+
+
+	position: absolute;
+	top: 600px;
+	left:150px;
+	/*background-image: url(../images/hero-arrows.png);*/
+	background-repeat: no-repeat;
+	/*height: 91px;*/
+	/*max-width: 92px;*/
+	/*
+	top:30px;
+	left:30px;*/
+}
+.hero .rotator .hero-vid-play-button img {
+	width:90px;
+	height:90px;
+}
+.hero .extras {
+	/*z-index: 150;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hero .extras .inner {
+	width: 980px;
+	height: 100%;
+}
+.hero .extras .hero-button {
+	position: absolute;
+    width: 1500px;
+    height: 719px;
+	cursor: pointer;
+	z-index: 150;
+	background: rgba(0,0,0,0);
+}
+.hero .extras .hero-button:hover {
+	background: none repeat scroll 0 0 rgba(48, 40, 33, 0.7);
+}
+.hero .extras #hero_prev {
+    right: 980px;
+}
+.hero .extras #hero_next {
+	left: 980px;
+}
+.hero .extras .hero-button .arrow {
+	position: absolute;
+	top: 358px;
+	width: 12px;
+	height: 22px;
+	background-image: url(../images/hero-arrows.png);
+	background-repeat: no-repeat;
+}
+.hero .extras #hero_prev .arrow {
+	right: 54px;
+	background-position: 0 0;
+}
+.hero .extras #hero_prev:hover .arrow {
+	background-position: -12px 0;
+}
+.hero .extras #hero_next .arrow {
+	left: 54px;
+	background-position: 0 -22px;
+}
+.hero .extras #hero_next:hover .arrow {
+	background-position: -12px -22px;
+}
+.hero .extras .hero-button .circle {
+	display:none;
+	position: absolute;
+	top: 344px;
+	width: 50px;
+	height: 50px;
+	background: #888;
+	opacity: 0.3;
+	filter: alpha(opacity=20);
+	border-radius: 25px;
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+}
+.hero .extras #hero_prev .circle {
+	right: 34px;
+}
+.hero .extras #hero_next .circle {
+	left: 34px;
+}
+.hero .rotator img {
+	width: 980px;
+	height: 719px;
+	display:block;
+	/*visibility: visible !important;*/
+}
+.hero .photo-credit {
+	bottom: 8px;
+	left: 14px;
+	position: absolute;
+	margin: 0;
+	font-size: 14px;
+	color: #929496;
+	font-style: italic;
+}
+#hero_pager {
+	bottom: 8px;
+	right: 10px;
+	position: absolute;
+	font-family: arial;
+	font-size: 28px;
+	font-style: normal;
+	line-height: 15px;
+	letter-spacing: 5px;
+}
+#hero_pager span {
+	cursor: pointer;
+	color: #ccc;
+	overflow: hidden;
+	outline: none;
+}
+#hero_pager span.cycle-pager-active {
+	color: #a39161;
+}
+.hero .stacked .photo-credit {
+	bottom: 14px;
+}
+.hero .stacked #hero_pager {
+	bottom: 1px;
+}
+
+
+
+/* @group Flipster Previous & Next Buttons */
+.flipster__button {
+  position: absolute;
+  top: 50%;
+  display: block;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 15px;
+  opacity: 0.5;
+  transition: opacity 500ms ease;
+  margin: -1em 2em;
+}
+.flipster__button svg {
+  width: 2em;
+  stroke: currentColor;
+  fill: transparent;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.flipster__button:hover,
+.flipster__button:focus {
+  opacity: 1;
+}
+.flipster__button--prev {
+  left: 0;
+}
+.flipster__button--next {
+  right: 0;
+}
+/* @end */
